@@ -7,11 +7,26 @@
     "@types/node": "11.11.7",
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.3",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-content-loader": "^4.2.1",
+    "react-icons": "^3.5.0",
+    "react-infinite-scroll-component": "^4.5.2",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "typescript": "3.3.4000"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
