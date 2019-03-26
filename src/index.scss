@@ -53,3 +53,15 @@ html, body {
     outline: none !important;
   }
 }
+
+.header-title {
+  font-family: Montserrat-SemiBold;
+  font-size: 40px;
+  margin: 10px auto;
+  text-align: center;
+  letter-spacing: -2px;
+  @media (max-width: 760px) {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+}

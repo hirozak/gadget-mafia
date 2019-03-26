@@ -1,0 +1,25 @@
+.loaders {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  @media (min-width: 761px) {
+    padding: 20px;
+  }
+}
+.loader {
+  width: 260px;
+  height: 280px;
+  margin: 2px;
+  svg {
+    width: 240px;
+    height: 280px;
+  }
+  @media (max-width: 760px) {
+    width: calc(50vw - 9px);
+    height: 150px;
+    svg {
+      width: calc(50vw - 9px);
+      height: 150px;
+    }
+  }
+}
