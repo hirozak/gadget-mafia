@@ -32,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "yarn run tslint src/*.{ts,tsx} src/**/*.{ts,tsx} src/**/**/*.{ts,tsx}",
+    "prettier": "yarn run tslint src/*.{ts,tsx} src/**/*.{ts,tsx} src/**/**/*.{ts,tsx}  --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
