@@ -112,7 +112,7 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
         >
           <div className="Entry-feed">
             <h3 className="Entry-feed--title">
-              {this.state.entry && this.state.entry.feed.name}
+              {this.state.entry && `${this.state.entry.feed.name}の新着記事`}
             </h3>
             <div className="Entry-feed--entries">
               {feedEntries.entries.map(entry => (
