@@ -17,7 +17,7 @@ interface Props {
 }
 
 class Entries extends React.Component<Props & RouteComponentProps> {
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchEntries();
   }
 
