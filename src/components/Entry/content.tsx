@@ -6,7 +6,7 @@ import './content.scss';
 import ContentLoader from './contentLoader';
 
 interface Props {
-  entry: Entry;
+  entry: Entry | null;
 }
 
 const item: React.SFC<Props> = (props: Props) => (
