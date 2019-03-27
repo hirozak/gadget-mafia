@@ -1,42 +1,7 @@
-@font-face{
-  font-family: "Montserrat-Regular";
-  src: url('./assets/fonts/Montserrat-Regular.ttf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "Montserrat-SemiBold";
-  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "Montserrat-Bold";
-  src: url('./assets/fonts/Montserrat-Bold.ttf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "NotoSansJP-Regular";
-  src: url('./assets/fonts/NotoSansJP-Regular.otf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "NotoSansJP-Medium";
-  src: url('./assets/fonts/NotoSansJP-Medium.otf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "NotoSansJP-Thin";
-  src: url('./assets/fonts/NotoSansJP-Thin.otf');
-  font-display: swap;
-}
-@font-face{
-  font-family: "NotoSansJP-Bold";
-  src: url('./assets/fonts/NotoSansJP-Bold.otf');
-  font-display: swap;
-}
- 
 html, body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: NotoSansJP-Regular, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: NotoSansJP, Montserrat, sans-serif, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+  font-weight: normal;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -58,17 +23,5 @@ html, body {
     font-size: inherit;
     line-height: inherit;
     outline: none !important;
-  }
-}
-
-.header-title {
-  font-family: Montserrat-SemiBold, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 40px;
-  margin: 10px auto;
-  text-align: center;
-  letter-spacing: -2px;
-  @media (max-width: 760px) {
-    font-size: 30px;
-    margin: 10px auto;
   }
 }

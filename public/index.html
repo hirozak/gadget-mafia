@@ -6,11 +6,16 @@
 
     <title>GadgetMafia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="/public/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/Montserrat-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/Montserrat-SemiBold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/Montserrat-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/NotoSansJP-Regular.otf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/NotoSansJP-Medium.otf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="%PUBLIC_URL%/assets/fonts/NotoSansJP-Bold.otf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
   </head>
   <body ontouchstart="">
     <p class="header-title">Gadget Mafia</p>

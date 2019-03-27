@@ -118,10 +118,10 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
               {feedEntries.entries.map(entry => (
                 <Item key={entry.id} entry={entry} />
               ))}
+              {feedEntries.isFetching && <ItemLoader />}
             </div>
           </div>
         </InfiniteScroll>
-        {feedEntries.isFetching && <ItemLoader />}
         <Link to="/" className="Entry-back">
           <IoIosArrowBack size="30px" color="#222" />
           <span>ホームに戻る</span>
