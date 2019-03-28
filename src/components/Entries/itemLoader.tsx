@@ -12,7 +12,7 @@ const contentLoaderColumns = (
   >
     <rect x="0" y="0" rx="5" ry="5" width="100%" height="55%" />
     <rect x="0" y="60%" rx="5" ry="5" width="100%" height="7%" />
-    <rect x="0" y="75%" rx="5" ry="5" width="100%" height="5%" />
+    <rect x="0" y="72%" rx="5" ry="5" width="100%" height="5%" />
   </ContentLoader>
 );
 
