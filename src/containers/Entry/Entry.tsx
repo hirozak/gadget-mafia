@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { connect } from 'react-redux';
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 
 import Item from '../../components/Entries/item';
 import ItemLoader from '../../components/Entries/itemLoader';
@@ -36,6 +36,30 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
       isFetching: false
     }
   };
+
+  constructor(props: RouteComponentProps<RouterProps>) {
+    super(props);
+    this.goBack = this.goBack.bind(this);
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    this.fetchEntry();
+  }
+
+  componentWillReceiveProps() {
+    this.setState((prevState: State, nextProps: RouteComponentProps) => {
+      window.scrollTo(0, 0);
+      return {
+        ...prevState,
+        entry: nextProps.location.state.entry
+      };
+    });
+  }
+
+  goBack() {
+    this.props.history.goBack();
+  }
 
   fetchEntry() {
     const feedEntries = this.state.feedEntries;
@@ -83,21 +107,6 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
     }
   }
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    this.fetchEntry();
-  }
-
-  componentWillReceiveProps() {
-    this.setState((prevState: State, nextProps: RouteComponentProps) => {
-      window.scrollTo(0, 0);
-      return {
-        ...prevState,
-        entry: nextProps.location.state.entry
-      };
-    });
-  }
-
   render() {
     const feedEntries = this.state.feedEntries;
     return (
@@ -122,10 +131,10 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
             </div>
           </div>
         </InfiniteScroll>
-        <Link to="/" className="Entry-back">
+        <div className="Entry-back" onClick={this.goBack}>
           <IoIosArrowBack size="30px" color="#222" />
           <span>ホームに戻る</span>
-        </Link>
+        </div>
       </div>
     );
   }
