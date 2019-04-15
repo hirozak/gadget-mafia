@@ -26,11 +26,11 @@ const item: React.SFC<Props> = (props: Props) => (
       <p className="EntriesItem-title">{props.entry.title}</p>
       <div className="EntriesItem-info">
         <span className="EntriesItem-info--feedName">
-          <IoIosApps size="16px" />
+          <IoIosApps size="15px" />
           <span>{props.entry.feed.name}</span>
         </span>
         <span className="EntriesItem-info--publishedAgo">
-          <IoMdTime size="16px" />
+          <IoMdTime size="15px" />
           <span>{props.entry.publishedAgo}前</span>
         </span>
       </div>

@@ -59,7 +59,10 @@
         margin-left: 3px;
       }
       @media (max-width: 760px) {
-        font-size: 12px;
+        font-size: 11px;
+        span {
+          margin-left: 1px;
+        }
       }
     }
     &--publishedAgo {
@@ -71,7 +74,10 @@
         margin-left: 3px;
       }
       @media (max-width: 760px) {
-        font-size: 11px;
+        font-size: 10px;
+        span {
+          margin-left: 1px;
+        }
       }
     }
   }
