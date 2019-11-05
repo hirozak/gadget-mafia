@@ -133,7 +133,7 @@ class Entry extends React.Component<RouteComponentProps<RouterProps>, State> {
         </InfiniteScroll>
         <div className="Entry-back" onClick={this.goBack}>
           <IoIosArrowBack size="30px" color="#222" />
-          <span>ホームに戻る</span>
+          <span>戻る</span>
         </div>
       </div>
     );
