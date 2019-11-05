@@ -37,6 +37,7 @@ const item: React.SFC<Props> = (props: Props) => (
             className="EntryContent-link"
             href={props.entry.url}
             target="_blank"
+            rel="noopener noreferrer"
           >
             続きを読む
           </a>
